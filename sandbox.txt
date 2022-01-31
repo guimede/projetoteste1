@@ -1,1 +1,9 @@
 git remote add origin https://github.com/guimede/projetoteste1.git
+
+php artisan migrate
+php artisan make:seeder UsersSeeder
+php artisan db:seed --class=UserSeeder
+php artisan migrate:fresh --seed
+php artisan make:controller UserController -r
+php artisan route:list
+npm run watch  
